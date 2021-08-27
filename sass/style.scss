@@ -91,8 +91,8 @@ body {
   
   .hero__button {
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from($color-secondary), to(#9356dc));
+    background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
     color: white;
     padding: 0 20px;
     border-radius: 200px;
@@ -174,7 +174,7 @@ body {
   }
   
   .process__number {
-    background-color: #9356DC;
+    background-color: $color-primary;
     color: white;
     position: absolute;
     padding: 3px 8px 3px 8px;
@@ -269,7 +269,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    background: #99e2d0;
+    background: $color-tertiary;
     top: 20px;
     right: 20px;
   }

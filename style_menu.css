@@ -1,18 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  background: #f6f6f6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-* a {
-  text-decoration: none;
-  color: white;
-}
-
 header {
   z-index: 10;
   background: white;
@@ -44,6 +29,65 @@ header .header__logo {
 }
 header .header__logo a {
   color: #000;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__bloc {
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer__bloc .logo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.footer__bloc-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__bloc-link {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer__bloc-link:hover .footer__bloc-link__title {
+  text-decoration: underline;
+}
+.footer__bloc-link i {
+  margin-right: 7px;
+}
+.footer__bloc-link__title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* a {
+  text-decoration: none;
+  color: white;
 }
 
 .img {
@@ -274,50 +318,6 @@ header .header__logo a {
 
 #case-9 {
   animation-delay: 0.9s;
-}
-
-.footer {
-  width: 100%;
-  background-color: #353535;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer__bloc {
-  padding: 0 40px;
-  width: 100%;
-  max-width: 1200px;
-}
-.footer__bloc .logo {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 20px;
-  padding: 15px 0;
-}
-.footer__bloc-links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.footer__bloc-link {
-  display: flex;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  color: white;
-  height: 30px;
-  cursor: pointer;
-}
-.footer__bloc-link:hover .footer__bloc-link__title {
-  text-decoration: underline;
-}
-.footer__bloc-link i {
-  margin-right: 7px;
-}
-.footer__bloc-link__title {
-  font-size: 16px;
-  font-weight: 400;
 }
 
 @media screen and (min-width: 1100px) {
