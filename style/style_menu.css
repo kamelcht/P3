@@ -180,12 +180,14 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  transition: all 3s;
 }
 .menu__grid__case:hover .validation__box {
   display: flex;
   justify-content: center;
   align-items: center;
   animation: slide-left 0.5s ease;
+  animation-direction: alternate;
   transform-origin: right;
 }
 .menu__grid__case:hover .menu__case__price {
@@ -200,7 +202,8 @@ body {
   right: 0px;
   padding: 0 13px;
   height: 100%;
-}
+  }
+  
 .menu__grid__case .validation__box i {
   font-size: 30px;
   color: white;
@@ -270,6 +273,22 @@ body {
   }
   100% {
     transform: scaleX(-50px);
+  }
+}
+@keyframes rotate_reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: scaleX(-50px);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }
 @keyframes opacity {
