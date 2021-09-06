@@ -75,6 +75,10 @@ header .header__logo a {
   font-weight: 400;
 }
 
+test {
+  background-color: lightgray;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -180,7 +184,8 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-  transition: all 3s;
+  transition: 0.5s;
+  transition-duration: 0.5s;
 }
 .menu__grid__case:hover .validation__box {
   display: flex;
@@ -189,21 +194,26 @@ body {
   animation: slide-left 0.5s ease;
   animation-direction: alternate;
   transform-origin: right;
+  transition-duration: 0.5s;
 }
 .menu__grid__case:hover .menu__case__price {
   padding-right: 70px;
   transition: 0.5s ease;
+  transition-duration: 0.5s;
 }
 .menu__grid__case .validation__box {
   display: none;
   position: absolute;
   background: #99E2D0;
+  transition-duration: 0.5s;
+  animation-name: slide-right;
   border-radius: 0 15px 15px 0;
   right: 0px;
   padding: 0 13px;
   height: 100%;
-  }
-  
+  transition: all 2sec;
+  -webkit-transition: anim 5s ease-out;
+}
 .menu__grid__case .validation__box i {
   font-size: 30px;
   color: white;

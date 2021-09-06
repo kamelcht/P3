@@ -114,26 +114,36 @@ body {
             border-radius: 15px;
             background-color: white ;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
-            transition: 3s;            
+            transition: 0.5s;
+            transition-duration: 0.5s;
+
+            
             &:hover .validation__box {
                 @include flexbox-center;
                 animation: slide-left .5s ease;
                 animation-direction: alternate;
                 transform-origin: right;
+                transition-duration: 0.5s;
+
             }
             &:hover .menu__case__price {
                 padding-right: 70px;
                 transition: 0.5s ease ;
+                transition-duration: 0.5s;
+
             }
             .validation__box {
                 display: none;
                 position: absolute;
                 background: $color-tertiary;
+                transition-duration: 0.5s;
+                animation-name: slide-right;
                 border-radius: 0 15px 15px 0;
                 right: 0px;
                 padding: 0 13px;
                 height: 100%;
                 transition: all 2sec;
+                -webkit-transition: anim 5s ease-out;
                 i {
                     font-size: 30px;
                     color: white;
